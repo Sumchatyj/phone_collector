@@ -3,6 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .views import WebhookView
 
+
 urlpatterns = [
-    path('webhook/', csrf_exempt(WebhookView.as_view())),
+    path("webhook/", csrf_exempt(WebhookView.as_view())),
 ]
