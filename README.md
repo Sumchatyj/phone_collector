@@ -1,8 +1,17 @@
 # Phone collector
 
-Django app that gets phone number from telegram bot and sends data to another service.
+## Description
 
-## Installation
+Django app that gets phone number from telegram bot and sends data to another service. Application uses webhooks. After the first message the bot will ask you to take your phone number.
+
+## Getting Started
+
+### Dependencies
+
+* python 3.7
+* django 4.0.4
+
+### Installing
 
 Clone repository and register a telegram bot by using BotFather.
 
@@ -25,6 +34,9 @@ Make migrations:
 ```bash
 python manage.py migrate
 ```
+
+### Executing program
+
 Run the server:
 
 ```bash
@@ -32,4 +44,3 @@ python manage.py runserver
 ```
 ## Usage
 
-After the first message the bot will ask you to take your phone number.
